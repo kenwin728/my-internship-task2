@@ -17,8 +17,7 @@ function Footer() {
               </h2>
             </button>
             <p class="text-base leading-relaxed text-white mt-7">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+              Empowering your future with cutting-edge tech solutions today
             </p>
 
             <ul class="flex items-center space-x-3 mt-9">

@@ -39,7 +39,7 @@ const Stats = () => {
             <p className="mt-4 text-xl font-medium text-gray-900">
               Projects delivered
             </p>
-            <p className="text-base mt-0.5 text-gray-500">In last 6 years</p>
+            <p className="text-base mt-0.5 text-gray-500">In last 4 years</p>
           </div>
 
           <div>
