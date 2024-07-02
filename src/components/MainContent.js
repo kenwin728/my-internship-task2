@@ -1,78 +1,67 @@
 import React from "react";
 import { motion } from "framer-motion";
+import About1 from "./AboutUs";
+import Team from "./Team";
+import Contact from "./Contact";
+import Stats from "./Stats";
+import Reputation from "./Reputation";
+import Service from "./Services";
 
 function MainContent() {
   return (
-    <main className="p-4 bg-gray-400">
+    <main className="p-4 bg-gray-100">
       <section className="my-8">
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <div className="flex flex-row justify-evenly items-center">
-            <div className="mx-2 flex flex-col justify-center items-center">
-              <h2 className="text-xl font-bold underline decoration-4 text-center">
-                ABOUT US
-              </h2>
-              <p className="text-gray-700 text-center">
-                We are a leading tech company specializing in innovative
-                solutions.
-              </p>
-            </div>
-            <img
-              src="https://png.pngtree.com/thumb_back/fh260/background/20230705/pngtree-3d-render-of-tech-inspired-abstract-black-and-white-background-image_3739113.jpg"
-              alt="Tech"
-              className="my-4 mx-2 h-80 w-80"
-            />
-          </div>
+          <About1 />
         </motion.div>
       </section>
       <section className="my-8">
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="flex flex-row justify-evenly items-center">
-            <img
-              src="https://c8.alamy.com/comp/WX4T8E/electronic-monochrome-black-and-white-high-tech-background-WX4T8E.jpg"
-              alt="Services"
-              className="my-4 mx-2 h-80 w-80"
-            />
-            <div className="mx-2 flex flex-col justify-center items-center">
-              <h2 className="text-xl font-bold underline decoration-4 text-center">
-                OUR SERVICES
-              </h2>
-              <p className="text-gray-700 text-center">
-                We offer a wide range of services including web development, app
-                development, and cloud solutions.
-              </p>
-            </div>
-          </div>
+          <Service />
         </motion.div>
       </section>
       <section className="my-8">
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <div className="flex flex-row justify-evenly items-center">
-            <div className="mx-2 flex flex-col justify-center items-center">
-              <h2 className="text-xl font-bold underline decoration-4 text-center">
-                CONTACT US
-              </h2>
-              <p className="text-gray-700 text-center">
-                Get in touch with us for more information.
-              </p>
-            </div>
-            <img
-              src={`${process.env.PUBLIC_URL}/Contact.png`}
-              alt="Contact"
-              className="my-4 mx-2 h-80 w-80"
-            />
-          </div>
+          <Reputation />
+        </motion.div>
+      </section>
+      <section className="my-8">
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <Stats />
+        </motion.div>
+      </section>
+      <section className="my-8">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, type: "spring", stiffness: 200 }}
+        >
+          <Team />
+        </motion.div>
+      </section>
+      <section className="my-8">
+        <motion.div
+          initial={{ opacity: 0, rotateY: -90 }}
+          whileInView={{ opacity: 1, rotateY: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <Contact />
         </motion.div>
       </section>
     </main>
