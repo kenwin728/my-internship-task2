@@ -266,7 +266,7 @@ const Service = () => {
             }
           />
           <ServiceCard
-            title="Artificial Intelligence & Machine Learning"
+            title="Artificial Intelligence"
             details="Advanced AI and ML technologies to drive innovation and efficiency."
             icon={
               <svg
@@ -365,7 +365,7 @@ const Service = () => {
             }
           />
           <ServiceCard
-            title="Data Analytics & Business Intelligence"
+            title="Data Analytics"
             details="Insightful data analysis to help you make informed business decisions."
             icon={
               <svg
